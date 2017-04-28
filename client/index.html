@@ -9,3 +9,89 @@
     </div>
   </body>
 </html>
+---
+
+
+<div class="menu-button" >
+	<hr />
+	<hr />
+	<hr />
+</div><!-- .menu-button -->
+
+
+
+<div class="menu-button" id="example-two">
+	<hr />
+	<p>Menu</p>
+	<hr />
+</div><!-- .menu-button #example-two -->
+
+
+
+<style type="text/css" >
+	body{width:100%; max-width:900px; margin:100px auto; }/* Note: this css is not required */
+	.menu-button{
+		position:relative;
+		display:block;
+		width:50px; height:50px;
+		margin:100px auto;
+	cursor:pointer;
+	}
+
+	.menu-button p{
+		font-family:Open Sans;
+		text-transform:uppercase;
+		color:#a51e22;
+		font-weight:bold;
+		letter-spacing:2px;
+		font-size:80%;
+		text-align: center;
+		margin:0;
+	}
+
+	.menu-button hr{
+		position:relative;
+		border:none;
+		height:0; width:100%;
+		margin-bottom:5px;
+		border-bottom:5px solid #a51e22;
+		-webkit-transition:border-color ease-in-out .2s;
+		-moz-transition:all ease-in-out .2s;
+		transition:all ease-in-out .2s;
+	}
+
+	.menu-button:hover > hr{border-color:#1c2023;}
+
+	.menu-button.open{}
+
+		.menu-button.open hr{border-bottom:10px solid #a51e22;}
+
+		.menu-button.open hr:nth-child(1){
+			-webkit-transform:rotate(45deg);
+			-moz-transform:rotate(45deg);
+			transform:rotate(45deg);
+			top:20px;}
+
+		.menu-button.open hr:nth-child(2),
+		.menu-button.open p{opacity:0;}
+
+		.menu-button.open hr:nth-child(3){
+			-webkit-transform:rotate(-45deg);
+			-moz-transform:rotate(-45deg);
+			transform:rotate(-45deg);
+			-webkit-transition-duration:.3s;
+			-moz-transition-duration:.3s;
+			transition-duration:.3s;
+			top:-15px;}
+
+		.menu-button.open#example-two hr:nth-child(3){top:-20px;}
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+<script type="text/javascript">
+	$('.menu-button').on('click', function(){
+		$(this).toggleClass('open');
+	});
+</script>
