@@ -11,6 +11,9 @@ body{width:100%; max-width:900px; margin:100px auto; }/* Note: this css is not r
   margin:100px auto;
 cursor:pointer;
 }
+h1{
+text-align: center;
+color: navy;}
 
 .menu-button p{
   font-family:Open Sans;
