@@ -1,6 +1,6 @@
 
 *{
-  background-color: #FAFAFA;
+  background-color: pink;
 }
 
 body{width:100%; max-width:900px; margin:100px auto; }/* Note: this css is not required */
@@ -13,7 +13,7 @@ cursor:pointer;
 }
 h1{
 text-align: center;
-color: navy;}
+color: white;}
 
 .menu-button p{
   font-family:Open Sans;
@@ -31,7 +31,7 @@ color: navy;}
   border:none;
   height:0; width:100%;
   margin-bottom:5px;
-  border-bottom:5px solid navy;
+  border-bottom:5px solid white;
   -webkit-transition:border-color ease-in-out .2s;
   -moz-transition:all ease-in-out .2s;
   transition:all ease-in-out .2s;
@@ -41,7 +41,7 @@ color: navy;}
 
 .menu-button.open{}
 
-  .menu-button.open hr{border-bottom:10px solid pink;}
+  .menu-button.open hr{border-bottom:10px solid magenta;}
 
   .menu-button.open hr:nth-child(1){
     -webkit-transform:rotate(45deg);
