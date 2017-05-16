@@ -1,6 +1,6 @@
 
 *{
-  background-color: pink;
+  background-color: lightgrey;
 }
 
 body{width:100%; max-width:900px; margin:100px auto; }/* Note: this css is not required */
@@ -41,7 +41,7 @@ color: white;}
 
 .menu-button.open{}
 
-  .menu-button.open hr{border-bottom:10px solid magenta;}
+  .menu-button.open hr{border-bottom:10px solid white;}
 
   .menu-button.open hr:nth-child(1){
     -webkit-transform:rotate(45deg);
