@@ -1,6 +1,7 @@
 
 *{
-  background-color: lightgrey;
+  background-color: #000;
+  font-family: 'Barrio', cursive;
 }
 
 body{width:100%; max-width:900px; margin:100px auto; }/* Note: this css is not required */
@@ -13,12 +14,13 @@ cursor:pointer;
 }
 h1{
 text-align: center;
-color: white;}
 
+color: white;}
+p{color: white;}
 .menu-button p{
-  font-family:Open Sans;
+  font-family:'Barrio', cursive;
   text-transform:uppercase;
-  color:navy;
+  color:white;
   font-weight:bold;
   letter-spacing:2px;
   font-size:80%;
