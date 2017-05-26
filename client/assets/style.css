@@ -1,7 +1,8 @@
 
 *{
-  background-color: #1D2951;
+  background-color: pink;
   font-family: 'Barrio', cursive;
+  color: white;
 }
 
 body{width:100%; max-width:900px; margin:100px auto;
@@ -18,10 +19,10 @@ body{width:100%; max-width:900px; margin:100px auto;
   margin-top: -250px;
   transform-origin: 50% 48%;
   border-radius: 43%;
-  animation: drift 3000ms infinite linear;
+  animation: drift 8000ms infinite linear;
 }/* Note: this css is not required */
 
-.container:after {
+/*.container:after {
   content: '';
   display: block;
   left: 0;
@@ -31,7 +32,7 @@ body{width:100%; max-width:900px; margin:100px auto;
   background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
   z-index: 11;
   transform: translate3d(0, 0, 0);
-}
+}*/
 
 /*.title {
   position: absolute;
