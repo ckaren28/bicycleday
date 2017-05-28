@@ -1,8 +1,9 @@
 
 *{
   background-color: pink;
-  font-family: 'Barrio', cursive;
+  font-family: 'Amatic SC', cursive;
   color: white;
+  font-size: 30px;
 }
 
 body{width:100%; max-width:900px; margin:100px auto;
