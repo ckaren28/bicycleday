@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
+
+  <a href="#here"> x </a>
     can't wait til september
     <div class="container">
       <!-- <div class="menu-button" >
@@ -21,7 +24,28 @@
       <!-- <p>
 true.     </p> -->
 
-    </div>
+
+
+      <script>
+      $("#here").on("click", function( e ) {
+
+          e.preventDefault();
+
+          $("body, html").animate({
+              scrollTop: $( $(this).attr('href') ).offset().top
+          }, 600);
+
+      });
+      </script>
+      </div>
+
+
+      <div id="here">
+        <p>
+          HI
+        </p>
+      </div>
+  </div> <!--wrapper-->
   </body>
 </html>
 

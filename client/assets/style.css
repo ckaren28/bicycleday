@@ -5,6 +5,12 @@
   color: white;
   font-size: 30px;
 }
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 3000px;
+  overflow: scroll;
+}
 
 body{width:100%; max-width:900px; margin:100px auto;
   }
@@ -58,7 +64,7 @@ body{width:100%; max-width:900px; margin:100px auto;
 }
 
 
-
+#here{margin-top: 1000px;background: turquoise;}
 
 .menu-button{
   position:relative;
