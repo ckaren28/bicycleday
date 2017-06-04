@@ -1,6 +1,6 @@
 
 *{
-  background-color: purple`;
+  background-color: #CCCCFF;
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 30px;
@@ -58,6 +58,48 @@ body{width:100%; max-width:900px; margin:100px auto;
   text-shadow: 0 1px 0 rgba(black, .1);
   text-indent: .3em;
 }*/
+
+
+.content .line {
+   right: 0;
+}
+.content {
+  width: 400px;
+  height: 200px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+  background: #CCCFFF;
+}
+.content .line {
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  -webkit-animation: dude .75s 1 forwards;
+  animation: dude .75s 1 forwards;
+}
+@-webkit-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
 @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
