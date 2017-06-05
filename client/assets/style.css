@@ -75,7 +75,7 @@ body{width:100%; max-width:900px; margin:100px auto;
 }
 .content .line {
   height: 2px;
-  background: white;
+  background: black;
   position: absolute;
   top: 10px;
   right: 0;
