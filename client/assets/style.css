@@ -1,6 +1,6 @@
 
 *{
-  background-color: #CCCCFF;
+  background-color: #6d6d6d;
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 30px;
@@ -64,14 +64,14 @@ body{width:100%; max-width:900px; margin:100px auto;
    right: 0;
 }
 .content {
-  width: 400px;
+  width: 100%;
   height: 200px;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
   padding-bottom: 20px;
   position: relative;
-  background: #CCCFFF;
+  background: lightblue;
 }
 .content .line {
   height: 2px;
