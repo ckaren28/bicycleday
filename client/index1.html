@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>#</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/style1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <script type="text/javascript" src="main.js" > </script>
+  </head>
+  <body>
+
+
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+
+
+<canvas id="drawingBoard" width="1500" height="1500"> </canvas>
+
+
+
+  </body>
+</html>
+<script>
+window.requestAnimFrame = (function(){
+	return  window.requestAnimationFrame       ||
+		window.webkitRequestAnimationFrame ||
+		window.mozRequestAnimationFrame    ||
+		function( callback ){
+			window.setTimeout(callback, 1000 / 60);
+		};
+})();
+
+var ctx = document.getElementById("drawingBoard").getContext('2d');
+var x = 0;
+
+var height = 100;
+var offset = 50;
+var step = 0.2;
+var size = 5;
+
+ctx.fillStyle = "red";
+ctx.shadowBlur = 4;
+
+var equation = function(x, magnitude) {
+  return magnitude + Math.cos(x / 10) * magnitude;
+};
+
+requestAnimationFrame(function update() {
+
+  requestAnimationFrame(update);
+
+  x += step;
+
+  var color = "rgb(" + [
+     10 + Math.round(equation(x, 55)),
+     80 + Math.round(equation(x, 75)),
+     Math.round(equation(x, 20)),
+  ].join(",") + ")";
+
+  ctx.fillStyle = color;
+  ctx.shadowColor = color;
+
+  ctx.fillRect(x, equation(x, height) + offset, size, size);
+
+});
+</script>
