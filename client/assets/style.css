@@ -1,6 +1,6 @@
 
 *{
-  background-color: lavender;
+  background-color: #cc3300;
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 30px;
@@ -84,7 +84,7 @@ display: inline-block;
   text-transform: uppercase;
   padding-bottom: 20px;
   position: relative;
-  background: pink;
+  background: white;
 }
 /*.content .line {
   height: 2px;
